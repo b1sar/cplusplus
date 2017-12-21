@@ -11,6 +11,8 @@ enum rules{
     FOURTH_RULE
 };
 
+void show(int rule_num);
+
 int main(int argc, char *argv[]){
 
     if(argc != 3){//controlling of amount of arguments is 3, if not exit.
@@ -94,25 +96,30 @@ int main(int argc, char *argv[]){
     /*SHOWING RESULTS*/
     switch(rule_num){
         case 0:
-            cout<<"ACCEPTED"<<endl;
+            show(rule_num);
             break;
         case 1:
-            cout<<"NOT MATCH ["<<xIndex<<"]["<<yIndex<<"] : "<<arr[xIndex][yIndex]<<endl;
-            cout<<"REASON : RULE "<<rule_num<<endl;
+            show(rule_num);
             break;
         case 2:
-            cout<<"NOT MATCH ["<<xIndex<<"]["<<yIndex<<"] : "<<arr[xIndex][yIndex]<<endl;
-            cout<<"REASON : RULE "<<rule_num<<endl;
+            show(rule_num);
             break;
         case 3:
-            cout<<"NOT MATCH ["<<xIndex<<"]["<<yIndex<<"] : "<<arr[xIndex][yIndex]<<endl;
-            cout<<"REASON : RULE "<<rule_num<<endl;
+            show(rule_num);
             break;
         case 4:
-            cout<<"NOT MATCH ["<<xIndex<<"]["<<yIndex<<"] : "<<arr[xIndex][yIndex]<<endl;
-            cout<<"REASON RULE "<<rule_num<<endl;
+            show(rule_num);
             break;
     };
 };
+
+void show(rule_num){
+        if(rule_num ==0){
+        cout<<"ACCEPTED"<<endl;
+        }else{
+        cout<<"NOT MATCH ["<<xIndex<<"]["<<yIndex<<"] : "<<arr[xIndex][yIndex]<<endl;
+        cout<<"REASON : RULE "<<rule_num<<endl;
+        };
+}
 
 
