@@ -1,1 +1,3 @@
 # cplusplus
+
+"all wrongs reserved"
